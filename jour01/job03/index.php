@@ -27,7 +27,7 @@ echo "<table>
             <tr>
                 <th>string</th>
                 <td>my_string</td>
-                <th>$my_String</th>
+                <td>$my_String</td>
             </tr>
             <tr>
                 <th>float</th>

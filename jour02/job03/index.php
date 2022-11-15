@@ -3,7 +3,7 @@
 	for($i = 0; $i <=100; $i++) {  
 
         if ( $i === 42) { 
-            echo "LaPlateforme<br/>"; ;
+            echo "LaPlateforme<br/>"; 
         } else if ($i >= 0 && $i <= 20) {
             echo "<i>$i</i><br>" ;
         } else if ($i >= 25 && $i <= 50) {

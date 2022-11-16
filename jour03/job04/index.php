@@ -20,7 +20,7 @@ $count = 0;
 /*
 
 ou bien 
-
+$i= 0 ; 
 while (isset($str[$i])){ 
     $i++
 }

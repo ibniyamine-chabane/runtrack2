@@ -16,15 +16,17 @@ $count_voyelles = 0;
 $count_consonnes = 0;
     while (isset($str[$i])) {
         
-        if ( $str[$i] == 'a' || $str[$i] == 'e' || $str[$i] == 'i' || $str[$i] == 'o' || $str[$i] == 'O' || $str[$i] == 'u' 
+        if ( $str[$i] == 'a' || $str[$i] == 'e' || $str[$i] == 'i' || $str[$i] == 'o' 
+        || $str[$i] == 'O' || $str[$i] == 'u' 
         || $str[$i] == 'y' || $str[$i] == 'I') {
 
             $count_voyelles = $count_voyelles + 1;
 
         } else if ( $str[$i] == 'b' || $str[$i] == 'c' || $str[$i] == 'd' || $str[$i] == 'f' 
-        || $str[$i] == 'g' || $str[$i] == 'h' || $str[$i] == 'j' || $str[$i] == 'k' || $str[$i] == 'l' 
-        || $str[$i] == 'm' || $str[$i] == 'n' || $str[$i] == 'p' || $str[$i] == 'q' || $str[$i] == 'r' 
-        || $str[$i] == 's' || $str[$i] == 't' || $str[$i] == 'v' || $str[$i] == 'w' || $str[$i] == 'x' || $str[$i] == 'z') {
+        || $str[$i] == 'g' || $str[$i] == 'h' || $str[$i] == 'j' || $str[$i] == 'k' 
+        || $str[$i] == 'l' || $str[$i] == 'm' || $str[$i] == 'n' || $str[$i] == 'p' 
+        || $str[$i] == 'q' || $str[$i] == 'r' || $str[$i] == 's' || $str[$i] == 't' 
+        || $str[$i] == 'v' || $str[$i] == 'w' || $str[$i] == 'x' || $str[$i] == 'z') {
 
             $count_consonnes = $count_consonnes + 1;
 
@@ -34,17 +36,17 @@ $count_consonnes = 0;
 
     }
 
-    echo    "<table style='border-style:solid'>
-             <thead>
-                <th style='border:1px solid'>$dic[0]</th>
-                <th style='border:1px solid'>$dic[1]</th>             
-              </thead> 
-              <tbody>
-                <tr style='border-style:solid'>
-                    <td style='border:1px solid'>$count_consonnes</td>
-                    <td style='border:1px solid'>$count_voyelles</td>
-                </tr>
-              </tbody>    
+    echo   "<table style='border-style:solid'>
+                <thead>
+                   <th style='border:1px solid'>$dic[0]</th> 
+                   <th style='border:1px solid'>$dic[1]</th>             
+                </thead> 
+                <tbody>
+                   <tr style='border-style:solid'>
+                       <td style='border:1px solid'>$count_consonnes</td>
+                       <td style='border:1px solid'>$count_voyelles</td>
+                   </tr>
+                </tbody>    
             </table>"
 
 ?>

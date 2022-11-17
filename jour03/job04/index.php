@@ -17,12 +17,14 @@ $count = 0;
         $i++;
         
     }
+
+    echo $i;
 /*
 
 ou bien 
 $i= 0 ; 
 while (isset($str[$i])){ 
-    $i++
+    $i++;
 }
 
 echo $i;

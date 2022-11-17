@@ -30,7 +30,7 @@ tableau :*/
                 </thead>
                 <tbody>
                     <tr>
-                        <td style='border: 1px solid'>$key</td>
+                        <td style='border: 1px solid'>$key</td>   //ne lit que le premier tour de la boucle.
                         <td style='border: 1px solid'>$value</td>
                     </tr>
                 </tbody>

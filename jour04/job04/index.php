@@ -19,7 +19,7 @@
     <label for='nom'>Quel est votre nom :<br/></label>
     <input type='text' name='nom' id='nom'>
     <label for='nom'><br/>Quel est votre prenom : <br/></label>
-    <input type='text' name='prenom' id='prenom'>
+    <input type='text' name='prenom' id='prenom'></br>
     <input type='submit' value='Envoyer'>
 </form>
 

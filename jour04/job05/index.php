@@ -24,7 +24,7 @@ Après validation du formulaire :
 </form>
 
 <?php 
-if ( isset($_POST['username']) &&  isset($_POST['password'])) {
+if ( isset($_POST['username']) && isset($_POST['password'])) {
 
     if ( $_POST['username'] == 'John' && $_POST['password'] == 'Rambo') {
     echo 'C\'est pas ma guerre';

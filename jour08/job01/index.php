@@ -21,17 +21,17 @@ session_start();
         $_SESSION['nbvisites'] = 1;
     }
 
-    echo $_SESSION['nbvisites'];
-
-    if (isset($_GET['boutton'])) {
+    
+    if (isset($_POST['boutton'])) {
         $_SESSION['nbvisites'] = 0;
         //session_destroy();
         
     }
-    var_dump($_GET);    
+    echo $_SESSION['nbvisites'];
+    var_dump($_POST);    
 
 ?>
-<form method="get">
+<form method="post">
     <input type="submit" name='boutton'>
 </form>
 

@@ -18,15 +18,15 @@ session_start();
 setcookie('nbvisites', '0', time()+3600);
 
 if (isset($_COOKIE['nbvisites'])) {
-    $_COOKIE['nbvisites']++;
+    setcookie('nbvisites', $_COOKIE['nbvisites'] + 1, time()+3600);
 } else {
-    $_COOKIE['nbvisites'] = 1;
+    setcookie('nbvisites', '1', time()+3600);
 }
 
 echo $_COOKIE['nbvisites'];
 
 if (isset($_POST['boutton'])) {
-    $_COOKIE['nbvisites'] = 0;
+    setcookie('nbvisites', '0', time()+3600);
     //session_destroy();    
 }
 var_dump($_COOKIE);    
